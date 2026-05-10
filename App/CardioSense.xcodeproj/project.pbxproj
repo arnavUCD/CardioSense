@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F00000000000000000000001 /* CardioSenseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000001 /* CardioSenseApp.swift */; };
+		F00000000000000000000002 /* ECGPrediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000002 /* ECGPrediction.swift */; };
+		F00000000000000000000003 /* SamplePredictions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000003 /* SamplePredictions.swift */; };
+		F00000000000000000000004 /* PredictionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000004 /* PredictionStore.swift */; };
+		F00000000000000000000005 /* CardioSenseTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000005 /* CardioSenseTheme.swift */; };
+		F00000000000000000000006 /* StatusHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000006 /* StatusHeader.swift */; };
+		F00000000000000000000007 /* MetricTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000007 /* MetricTile.swift */; };
+		F00000000000000000000008 /* ProbabilityBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000008 /* ProbabilityBar.swift */; };
+		F00000000000000000000009 /* HRVGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000009 /* HRVGrid.swift */; };
+		F0000000000000000000000A /* RecordingDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000000A /* RecordingDetailsView.swift */; };
+		F0000000000000000000000B /* HistoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000000B /* HistoryRow.swift */; };
+		F0000000000000000000000C /* MainMonitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000000C /* MainMonitorView.swift */; };
+		F0000000000000000000000D /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000000D /* DetailsView.swift */; };
+		F0000000000000000000000E /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000000E /* HistoryView.swift */; };
+		F0000000000000000000000F /* ImportTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000000F /* ImportTestView.swift */; };
+		F00000000000000000000010 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000010 /* RootTabView.swift */; };
+		F00000000000000000000011 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000011 /* Assets.xcassets */; };
+		F00000000000000000000012 /* ClinicalCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000012 /* ClinicalCard.swift */; };
+		F00000000000000000000013 /* ConfidenceGauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000013 /* ConfidenceGauge.swift */; };
+		F00000000000000000000014 /* SectionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000014 /* SectionLabel.swift */; };
+		F00000000000000000000015 /* PredictionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000015 /* PredictionService.swift */; };
+		F00000000000000000000016 /* MonitorConnectionBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000016 /* MonitorConnectionBar.swift */; };
+		F00000000000000000000018 /* LiveStatusPill.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000018 /* LiveStatusPill.swift */; };
+		F00000000000000000000019 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000019 /* SettingsView.swift */; };
+		F0000000000000000000001A /* PatientIdentityStrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000001A /* PatientIdentityStrip.swift */; };
+		F0000000000000000000001B /* PatientProfileCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000001B /* PatientProfileCard.swift */; };
+		F0000000000000000000001C /* HistoryAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000001C /* HistoryAnalysis.swift */; };
+		F0000000000000000000001D /* HistoryRangeChips.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000001D /* HistoryRangeChips.swift */; };
+		F0000000000000000000001E /* HistorySummaryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000001E /* HistorySummaryCard.swift */; };
+		F0000000000000000000001F /* HistoryEpisodeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000001F /* HistoryEpisodeRow.swift */; };
+		F00000000000000000000020 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000020 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F10000000000000000000001 /* CardioSenseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardioSenseApp.swift; sourceTree = "<group>"; };
+		F10000000000000000000002 /* ECGPrediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECGPrediction.swift; sourceTree = "<group>"; };
+		F10000000000000000000003 /* SamplePredictions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplePredictions.swift; sourceTree = "<group>"; };
+		F10000000000000000000004 /* PredictionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionStore.swift; sourceTree = "<group>"; };
+		F10000000000000000000005 /* CardioSenseTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardioSenseTheme.swift; sourceTree = "<group>"; };
+		F10000000000000000000006 /* StatusHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusHeader.swift; sourceTree = "<group>"; };
+		F10000000000000000000007 /* MetricTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricTile.swift; sourceTree = "<group>"; };
+		F10000000000000000000008 /* ProbabilityBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProbabilityBar.swift; sourceTree = "<group>"; };
+		F10000000000000000000009 /* HRVGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRVGrid.swift; sourceTree = "<group>"; };
+		F1000000000000000000000A /* RecordingDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingDetailsView.swift; sourceTree = "<group>"; };
+		F1000000000000000000000B /* HistoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRow.swift; sourceTree = "<group>"; };
+		F1000000000000000000000C /* MainMonitorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMonitorView.swift; sourceTree = "<group>"; };
+		F1000000000000000000000D /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		F1000000000000000000000E /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		F1000000000000000000000F /* ImportTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportTestView.swift; sourceTree = "<group>"; };
+		F10000000000000000000010 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+		F10000000000000000000011 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F10000000000000000000012 /* ClinicalCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicalCard.swift; sourceTree = "<group>"; };
+		F10000000000000000000013 /* ConfidenceGauge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfidenceGauge.swift; sourceTree = "<group>"; };
+		F10000000000000000000014 /* SectionLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionLabel.swift; sourceTree = "<group>"; };
+		F10000000000000000000015 /* PredictionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionService.swift; sourceTree = "<group>"; };
+		F10000000000000000000016 /* MonitorConnectionBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorConnectionBar.swift; sourceTree = "<group>"; };
+		F10000000000000000000017 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F10000000000000000000018 /* LiveStatusPill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStatusPill.swift; sourceTree = "<group>"; };
+		F10000000000000000000019 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F1000000000000000000001A /* PatientIdentityStrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientIdentityStrip.swift; sourceTree = "<group>"; };
+		F1000000000000000000001B /* PatientProfileCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientProfileCard.swift; sourceTree = "<group>"; };
+		F1000000000000000000001C /* HistoryAnalysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryAnalysis.swift; sourceTree = "<group>"; };
+		F1000000000000000000001D /* HistoryRangeChips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRangeChips.swift; sourceTree = "<group>"; };
+		F1000000000000000000001E /* HistorySummaryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistorySummaryCard.swift; sourceTree = "<group>"; };
+		F1000000000000000000001F /* HistoryEpisodeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryEpisodeRow.swift; sourceTree = "<group>"; };
+		F10000000000000000000020 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F20000000000000000000001 /* CardioSense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardioSense.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F30000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F40000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				F40000000000000000000002 /* CardioSense */,
+				F40000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F40000000000000000000002 /* CardioSense */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000001 /* CardioSenseApp.swift */,
+				F10000000000000000000017 /* Info.plist */,
+				F10000000000000000000020 /* LaunchScreen.storyboard */,
+				F40000000000000000000004 /* Models */,
+				F40000000000000000000005 /* Fixtures */,
+				F40000000000000000000006 /* Services */,
+				F40000000000000000000007 /* Theme */,
+				F40000000000000000000008 /* Components */,
+				F40000000000000000000009 /* Views */,
+				F10000000000000000000011 /* Assets.xcassets */,
+			);
+			path = CardioSense;
+			sourceTree = "<group>";
+		};
+		F40000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F20000000000000000000001 /* CardioSense.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F40000000000000000000004 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000002 /* ECGPrediction.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F40000000000000000000005 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000003 /* SamplePredictions.swift */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		F40000000000000000000006 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000004 /* PredictionStore.swift */,
+				F10000000000000000000015 /* PredictionService.swift */,
+				F1000000000000000000001C /* HistoryAnalysis.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F40000000000000000000007 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000005 /* CardioSenseTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		F40000000000000000000008 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000006 /* StatusHeader.swift */,
+				F10000000000000000000007 /* MetricTile.swift */,
+				F10000000000000000000008 /* ProbabilityBar.swift */,
+				F10000000000000000000009 /* HRVGrid.swift */,
+				F1000000000000000000000A /* RecordingDetailsView.swift */,
+				F1000000000000000000000B /* HistoryRow.swift */,
+				F10000000000000000000012 /* ClinicalCard.swift */,
+				F10000000000000000000013 /* ConfidenceGauge.swift */,
+				F10000000000000000000014 /* SectionLabel.swift */,
+				F10000000000000000000016 /* MonitorConnectionBar.swift */,
+				F10000000000000000000018 /* LiveStatusPill.swift */,
+				F1000000000000000000001A /* PatientIdentityStrip.swift */,
+				F1000000000000000000001B /* PatientProfileCard.swift */,
+				F1000000000000000000001D /* HistoryRangeChips.swift */,
+				F1000000000000000000001E /* HistorySummaryCard.swift */,
+				F1000000000000000000001F /* HistoryEpisodeRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F40000000000000000000009 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F1000000000000000000000C /* MainMonitorView.swift */,
+				F1000000000000000000000D /* DetailsView.swift */,
+				F1000000000000000000000E /* HistoryView.swift */,
+				F1000000000000000000000F /* ImportTestView.swift */,
+				F10000000000000000000010 /* RootTabView.swift */,
+				F10000000000000000000019 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F50000000000000000000001 /* CardioSense */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F50000000000000000000002 /* Build configuration list for PBXNativeTarget "CardioSense" */;
+			buildPhases = (
+				F50000000000000000000003 /* Sources */,
+				F30000000000000000000001 /* Frameworks */,
+				F50000000000000000000004 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CardioSense;
+			productName = CardioSense;
+			productReference = F20000000000000000000001 /* CardioSense.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F60000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 2640;
+				TargetAttributes = {
+					F50000000000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = F60000000000000000000002 /* Build configuration list for PBXProject "CardioSense" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F40000000000000000000001;
+			productRefGroup = F40000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F50000000000000000000001 /* CardioSense */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F50000000000000000000004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F00000000000000000000011 /* Assets.xcassets in Resources */,
+				F00000000000000000000020 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F50000000000000000000003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F00000000000000000000001 /* CardioSenseApp.swift in Sources */,
+				F00000000000000000000002 /* ECGPrediction.swift in Sources */,
+				F00000000000000000000003 /* SamplePredictions.swift in Sources */,
+				F00000000000000000000004 /* PredictionStore.swift in Sources */,
+				F00000000000000000000005 /* CardioSenseTheme.swift in Sources */,
+				F00000000000000000000006 /* StatusHeader.swift in Sources */,
+				F00000000000000000000007 /* MetricTile.swift in Sources */,
+				F00000000000000000000008 /* ProbabilityBar.swift in Sources */,
+				F00000000000000000000009 /* HRVGrid.swift in Sources */,
+				F0000000000000000000000A /* RecordingDetailsView.swift in Sources */,
+				F0000000000000000000000B /* HistoryRow.swift in Sources */,
+				F0000000000000000000000C /* MainMonitorView.swift in Sources */,
+				F0000000000000000000000D /* DetailsView.swift in Sources */,
+				F0000000000000000000000E /* HistoryView.swift in Sources */,
+				F0000000000000000000000F /* ImportTestView.swift in Sources */,
+				F00000000000000000000010 /* RootTabView.swift in Sources */,
+				F00000000000000000000012 /* ClinicalCard.swift in Sources */,
+				F00000000000000000000013 /* ConfidenceGauge.swift in Sources */,
+				F00000000000000000000014 /* SectionLabel.swift in Sources */,
+				F00000000000000000000015 /* PredictionService.swift in Sources */,
+				F00000000000000000000016 /* MonitorConnectionBar.swift in Sources */,
+				F00000000000000000000018 /* LiveStatusPill.swift in Sources */,
+				F00000000000000000000019 /* SettingsView.swift in Sources */,
+				F0000000000000000000001A /* PatientIdentityStrip.swift in Sources */,
+				F0000000000000000000001B /* PatientProfileCard.swift in Sources */,
+				F0000000000000000000001C /* HistoryAnalysis.swift in Sources */,
+				F0000000000000000000001D /* HistoryRangeChips.swift in Sources */,
+				F0000000000000000000001E /* HistorySummaryCard.swift in Sources */,
+				F0000000000000000000001F /* HistoryEpisodeRow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F70000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 488HV6A5NN;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F70000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 488HV6A5NN;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F70000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CardioSense/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CardioSense;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "CardioSense loads prediction JSON from your Mac during demos.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.varunchoudhary.cardiosense;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F70000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CardioSense/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CardioSense;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "CardioSense loads prediction JSON from your Mac during demos.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.varunchoudhary.cardiosense;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F50000000000000000000002 /* Build configuration list for PBXNativeTarget "CardioSense" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F70000000000000000000003 /* Debug */,
+				F70000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F60000000000000000000002 /* Build configuration list for PBXProject "CardioSense" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F70000000000000000000001 /* Debug */,
+				F70000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F60000000000000000000001 /* Project object */;
+}

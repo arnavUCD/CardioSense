@@ -1,0 +1,53 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+artifacts/*.pt
+
+# ============================================
+# Added for CardioSense multi-language project
+# ============================================
+
+# macOS
+.DS_Store
+Thumbs.db
+
+# Python (ML layer + signal pipeline)
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Runtime data files (regenerated each demo run)
+**/latest_result.json
+**/mode.txt
+**/shared/input.json
+**/shared/prediction.json
+**/shared/prediction.tmp.json
+
+# Logs
+logs/
+*.log
+
+# Large datasets (do not commit training data)
+raw/
+data/
+**/MIT-BIH-*/
+
+# IDE
+.vscode/
+.idea/
+
+# Build artifacts
+build/
+DerivedData/
+
+# Local Claude Code session state
+.claude/
+
+# Xcode per-user state and local backups
+xcuserdata/
+*.bak

@@ -1,0 +1,5 @@
+numpy>=1.24
+scipy>=1.11
+streamlit>=1.35
+plotly>=5.20
+websockets>=12.0
