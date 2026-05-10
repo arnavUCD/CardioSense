@@ -1,11 +1,5 @@
-.venv/
-__pycache__/
-*.pyc
-.DS_Store
-artifacts/*.pt
-
 # ============================================
-# Added for CardioSense multi-language project
+# CardioSense .gitignore
 # ============================================
 
 # macOS
@@ -32,7 +26,7 @@ env/
 logs/
 *.log
 
-# Large datasets (do not commit training data)
+# Large datasets
 raw/
 data/
 **/MIT-BIH-*/
@@ -45,9 +39,25 @@ data/
 build/
 DerivedData/
 
+# Xcode user state
+xcuserdata/
+
+# Backup files
+*.bak
+
 # Local Claude Code session state
 .claude/
 
-# Xcode per-user state and local backups
-xcuserdata/
-*.bak
+# ML model weights (commit metrics, not weights)
+artifacts/*.pt
+
+# Xcode build artifacts (from Swift template)
+*.hmap
+*.ipa
+*.dSYM
+*.dSYM.zip
+.build/
+
+# Xcode playgrounds
+timeline.xctimeline
+playground.xcworkspace
