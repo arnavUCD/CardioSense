@@ -2,7 +2,7 @@
 
 **Wearable ECG arrhythmia detection for the people Apple Watch was never designed for.**
 
-A continuous cardiac monitoring system built for uninsured agricultural workers and underserved populations across California's Central Valley — where the average farmworker's life expectancy is 49 years, heart disease is a leading contributor, and a $400 consumer wearable is not the answer.
+A continuous cardiac monitoring system to detect paryoxysmal arrythmia.
 
 Built end-to-end in 24 hours at HackDavis 2026 by a three-person team.
 
